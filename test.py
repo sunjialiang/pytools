@@ -8,7 +8,7 @@ try:
     from openpyxl import Workbook, load_workbook
 except ImportError:  # pragma: no cover - dependency handling
     print("openpyxl is required. Install it with 'pip install openpyxl'.")
-    sys.exit(0)
+    sys.exit(1)
 
 DEFAULT_FILE = "example.xlsx"
 
